@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+/*  Jeff Bohn   2/5/2021  , added "Slider CSS" */
+
+
+body {
+  font-family: "Redressed", 'Roboto Condensed', Verdana, Times, sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+h1 { 
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+	margin-bottom: .5em;
+  text-transform: uppercase;
+  margin-left: .3em;
+  text-shadow: 1px 1px lime !important;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin:.5em;
+  }
+
+.navStyle ol {
+  list-style: none;
+  background: #1c1c1c;
+  padding: 5px 0;
+}
+
+.navStyle li a {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  height: 2em;
+  border: 2px solid #383838;
+}
+.navStyle a:hover {
+  background-color: #19FF47;
+  color:  #1c1c1c;
+}
+img {
+  display: block;
+  width: 100%;
+} 
+
+main {
+  max-width: 700px;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+/*_________Start - LANDING AREA________*/
+
+.landing {
+  background: #fff;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+  -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 40vh !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.landing-image {
+  background: url(../images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh !important;
+  flex: 0 1 60vw;
+  margin: 0;
+  text-shadow: 1px 1px white;
+  font-size: 18px;
+}
+.landing-image p {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 300px;
+  text-shadow: 1px 1px white;
+  font-size: 18px;
+}
+
+/*_________End - LANDING AREA________*/
+
+
+
+.header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.header h2 {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer {
+  position: sticky;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1c1c1c;
+  color: white;
+  margin-bottom: -1px;
+  max-height: 20vh;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+footer p{
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+.fontColor{
+  color: white;
+}
+.share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+footer a:hover {
+    color: #19FF47;
+}
+
+/*  CONTACT FORM CSS */
+label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+    vertical-align: top;
+}
+input, select, textarea {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+select { 
+    width: 13em; 
+}
+textarea {
+    height: 5em;
+    width: 20em;
+}
+span {
+    color: red;
+    vertical-align: top;
+}
+.messages {
+  position: absolute;
+  border: none;
+  color: red;
+  padding: 2em;
+  margin-left: 75px;
+  margin-top: 250px;
+  list-style-type: none;
+} 
+
+#faqs{
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  width: auto;
+  padding-bottom: .8em;
+  padding-top: .2em;
+  line-height: 1.8em;
+}
+.termsOfService{
+ margin-left: 3.5em;
+ line-height: .7em;
+}
+
+/*  END CONTACT FORM CSS */
+
+/*   Start Slider CSS  */
+
+
+  h2 {
+  font-size: 120%;
+  padding: .5em 0;
+  }
+  
+  #slides{
+  display: none;
+  }
+  #mainAll{
+  width: 100%;
+  height: 150px;
+  padding-bottom: 80px;
+  }
+
+  /* End Slider CSS  */
+
+/* Screen Sizes 500px and Up 
+@media (min-width: 500px) {
+  
+    .landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    .landing-text {
+      height: 100vh;
+    }
+  
+    .landing-image {
+      height: 100vh;
+    }
+  }*/
+  
+  /* ________________________________________*/
+  @media (min-width: 1100px) {
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin: 0;
+    }
+    .navStyle ol {
+      list-style: none;
+      background: #1c1c1c;
+      padding: 5px;
+    }
+    .navStyle ol li{
+      display: inline;
+    }
+    .navStyle li a {
+      display: inline;
+      padding: 15px 10px;
+      margin: 10px;
+      background-color: black;
+    }
+    main {
+      max-width: 600px;
+      height: 50vh;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn {
+      padding: 1rem 3rem;
+    }
+   /*.messages {
+      border: 3px solid red;
+      color: red;
+      padding: 2em;
+      margin-bottom: 2em;
+  }  */
+
+  .messages {
+   
+   border: none;
+     color: red;
+     padding: 2em;
+     margin-left: auto;
+     margin-top: auto;
+     margin-top: 255px;
+     list-style-type: none;
+   } 
+   footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    background-color: #1c1c1c;
+    color: white;
+    margin-top: 140px;
+  }
+  #faqs{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    line-height: 2.2em;
+    max-width: 40vw;
+  }
+  h1 { 
+    font-size: 2.1em;
+  }
+  .landing {
+    display: flex;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700px;
+  }
+
+  .landing-text {
+    height: 100vh;
+  }
+
+  .landing-image {
+    height: 100vh;
+  }
+  .termsOfService{
+    margin-left: 6.5em;
+    line-height: .9em;
+   }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 35vw;
+    padding: 0 2em 1em;
+}
+h1 {
+    color: blue;
+}
+div {
+    margin-bottom: 1em;
+}
+*/

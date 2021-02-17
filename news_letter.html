@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!---------------------------------------------------------------------------------------------------------------
+  #Original Author:   Jeff Bohn 
+  #Date Created:   1/29/2021    
+  #Date Last Modified: 1/29/2021                    
+  #Date Last Modified: 2/12/2021                    
+  #Modification log:  Add landing page area                 
+  ------------------------------------------------------------------------------------------------------------------> 
+
+   <head>
+    <meta charset="utf-8">
+    <meta name="description" content="SWDV140 Class project week 1">
+    <meta name="keywords" content="Photography, landscape, outdoors, camera">
+    <meta name="author" content="Jeff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon/favicon-16x16.png" type="image/gif" sizes="16x16">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/news_letter.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- This works w/ Sandbox -->
+
+
+    <title>JB Photography : News Letter</title>
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navStyle">  
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="news_letter.html">News Letter</a></li>
+      </ul>
+   </nav>
+   </div>
+
+                   <!-- Landing Area -->
+         <div class="landing">
+          <div class="landing-text">
+           <div class="landing-text-inner">
+            <h1>News Letter</h1>
+           </div>
+          </div>
+         <div class="landing-image">&nbsp;&nbsp;<p>Image courtesy of Meineresterampe</p></div>
+       </div>
+
+    <main id="faqs">
+      <h1>News Letter Sign-up</h1>
+      <form id="email_form" name="email_form" 
+              action="confirm.html" method="get">
+              
+            <div>
+                <label for="dob">First Name:</label>
+                <input type="text" name="name" id="name">
+                <span>* Required</span>
+            </div>
+              
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" id="email">
+                <span>* Required</span>
+            </div>
+    
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="text" name="dob" id="dob">
+                <span>* Required</span>
+            </div>
+
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="join_list" value="Join List">
+                <input type="button" id="clear_form" value="Clear Form">
+            </div>     
+            
+        </form>
+ </main>
+  
+
+    <footer id="footer">
+        
+        <p>Email: <a href="mailto:jeffbohn@my.cwi.edu" class="fontColor">jeffbohn@my.cwi.edu</a></p>
+         <p>Phone: <strong>(555) 555-5555</strong></p>
+         <p>&copy; Copyright 2021. All Rights Reserved.</p>
+         <div class="share"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="social icon for facebook"></a><br>
+           &nbsp;&nbsp; <a href="https://www.github.com/" target="_blank"><img src="images/github.png" alt="social icon for github" width=35px></a>
+         </div>
+       </footer>
+       
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="js/news_letter.js"></script>
+       <script src="js/slide_show.js"></script>
+</body>
+</html>

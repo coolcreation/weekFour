@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+/*  Jeff Bohn   1/29/2021  */
+
+body {
+  font-family: "Redressed", 'Roboto Condensed', Verdana, Times, sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+/* .container{
+  margin: 1.5em;
+  padding-bottom: 0;
+} */
+
+h1 { 
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+	margin-bottom: .5em;
+  text-transform: uppercase;
+  margin-left: .3em;
+  text-shadow: 1px 1px lime !important;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    margin: 0;
+    font-family: "Redressed", 'Roboto Condensed', Verdana, Times, sans-serif;
+  }
+  p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin:.5em;
+    padding-bottom: .25em;
+    padding-left: 25px;
+    font-family: "Redressed", 'Roboto Condensed', Verdana, Times, sans-serif;
+  }
+
+.navStyle ul {
+  list-style: none;
+  background: #1c1c1c;
+  padding: 5px 0;
+}
+
+.navStyle li a {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  height: 2em;
+  border: 2px solid #383838;
+}
+.navStyle a:hover {
+  background-color: #19FF47;
+  color:  #1c1c1c;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+/*_________Start - LANDING AREA________*/
+
+.landing {
+  background: #fff;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+  -30px 0px 40px rgba(0, 0, 0, 0.1);
+
+}
+
+.landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 40vh !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.landing-image {
+  background: url(../images/news.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh !important;
+  flex: 0 1 60vw;
+  margin: 0;
+  text-shadow: 1px 1px white;
+  font-size: 18px;
+}
+.landing-image p {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 290px;
+  text-shadow: 1px 1px white;
+  font-size: 18px;
+}
+
+/*_________End - LANDING AREA________*/
+
+
+
+
+.header h2 {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+footer p{
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+.fontColor{
+  color: white;
+}
+.share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+footer a:hover {
+  color: #19FF47;
+  
+}
+
+/*  NEWS LETTER CSS  */
+
+
+#faqs{
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  width: auto;
+  padding-bottom: .5em;
+  padding-top: 3px;
+  line-height: 2.2em;
+}
+
+div {
+    margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+span {
+  position: absolute;
+  color: red; 
+  margin-left: -45%;
+  margin-top: 1.5em;
+}
+
+
+/*  END NEWS LETTER CSS  */
+
+/*  Start Slider CSS  */
+
+
+
+
+
+/*  End Slider CSS  */
+
+
+
+
+/* Screen Sizes 500px and Up 
+@media (min-width: 500px) {
+  
+    .landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    .landing-text {
+      height: 100vh;
+    }
+  
+    .landing-image {
+      height: 100vh;
+    }
+  }   */
+  
+  /* Screen Sizes 700px and Up */
+  @media (min-width: 800px) {
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin: 0;
+    }
+    .navStyle ul {
+      list-style: none;
+      background: #1c1c1c;
+      padding: 5px;
+    }
+    .navStyle ul li{
+      display: inline;
+    }
+    .navStyle li a {
+      display: inline;
+      padding: 15px 10px;
+      margin: 10px;
+      background-color: black;
+    }
+    main {
+      max-width: 1700px;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn {
+      padding: 1rem 3rem;
+    }
+    #faqs{
+      margin-top: 15vh;
+      margin-bottom: 15vh;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 35vw;
+      
+  }
+  h1 { 
+    font-size: 2.1em;
+  }
+  .landing {
+    display: flex;
+    height: 40vh !important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700px;
+    margin-top: -1em;
+  }
+
+  .landing-text {
+    height: 100vh;
+  }
+
+  .landing-image {
+    height: 100vh;
+  }
+  span {
+    position: absolute;
+    color: red; 
+    margin-left: -8.5%;
+    margin-top: 1.5em;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 600px;
+    padding: 0 2em 1em;
+}
+h1 {
+    color: blue;
+    */
